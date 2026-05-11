@@ -20,13 +20,14 @@ async function startServer() {
 
   // SEO Endpoints
   app.get("/robots.txt", (req, res) => {
+    console.log("Serving robots.txt");
     res.type("text/plain");
     res.send("User-agent: *\nAllow: /\n\nSitemap: https://betonamusoft.pro/sitemap.xml");
   });
 
   app.get("/sitemap.xml", (req, res) => {
-    res.type("application/xml");
-    res.send(`<?xml version="1.0" encoding="UTF-8"?>
+    console.log("Serving sitemap.xml request");
+    const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://betonamusoft.pro/</loc>
@@ -34,7 +35,9 @@ async function startServer() {
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-</urlset>`);
+</urlset>`;
+    res.header("Content-Type", "application/xml");
+    res.status(200).send(sitemap);
   });
 
   // API Route for Contact Form
