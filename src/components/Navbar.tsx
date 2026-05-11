@@ -33,7 +33,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
           <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-cyan-400 rounded-lg flex items-center justify-center font-bold text-white transition-transform duration-300 group-hover:rotate-6">
-            B
+            S
           </div>
           <span className="text-xl font-bold tracking-tight text-white uppercase">
             BETONAMU<span className="text-blue-500">SOFT</span>
