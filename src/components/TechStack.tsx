@@ -27,13 +27,13 @@ export default function TechStack() {
           >
             Our Core Stack
           </motion.h2>
-          <motion.h3 
+          <motion.h2 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             className="text-4xl font-display font-bold"
           >
-            Modern Technologies We Use
-          </motion.h3>
+            Nền Tảng Công Nghệ Của Chúng Tôi
+          </motion.h2>
         </div>
 
         <div className="flex flex-wrap justify-center gap-3">

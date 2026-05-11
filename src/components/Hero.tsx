@@ -30,8 +30,8 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.1] mb-6 text-white"
         >
-          Full <span className="text-gradient">Automation</span> <br />
-          Solutions for Business
+          Giải Pháp <span className="text-gradient">Tự Động Hóa</span> <br />
+          Phần Mềm Doanh Nghiệp
         </motion.h1>
 
         <motion.p

@@ -18,6 +18,25 @@ async function startServer() {
   app.use(cors());
   app.use(express.json());
 
+  // SEO Endpoints
+  app.get("/robots.txt", (req, res) => {
+    res.type("text/plain");
+    res.send("User-agent: *\nAllow: /\n\nSitemap: https://betonamusoft.pro/sitemap.xml");
+  });
+
+  app.get("/sitemap.xml", (req, res) => {
+    res.type("application/xml");
+    res.send(`<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://betonamusoft.pro/</loc>
+    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>`);
+  });
+
   // API Route for Contact Form
   app.post("/api/contact", async (req, res) => {
     const { name, email, company, service, message, honeypot } = req.body;

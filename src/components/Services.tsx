@@ -52,15 +52,15 @@ export default function Services() {
           >
             Our Expertise
           </motion.h2>
-          <motion.h3 
+          <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-5xl font-display font-bold"
           >
-            Comprehensive Software Solutions
-          </motion.h3>
+            Dịch Vụ Phần Mềm & Tự Động Hóa
+          </motion.h2>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

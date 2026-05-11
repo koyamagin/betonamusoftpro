@@ -12,9 +12,9 @@ export function About() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-sm font-bold text-cyan-400 uppercase tracking-[0.2em] mb-4">About Betonamusoft</h2>
-          <h3 className="text-4xl md:text-5xl font-display font-bold leading-tight mb-8">
+          <h2 className="text-4xl md:text-5xl font-display font-bold leading-tight mb-8">
             Digital Transformation Through <span className="text-blue-500">Expert Automation</span>
-          </h3>
+          </h2>
           <p className="text-lg text-slate-400 mb-10 leading-relaxed">
             Betonamusoft delivers custom software development and automation solutions for startups, SMEs, and enterprise clients. We specialize in building scalable systems that reduce manual work, improve efficiency, and accelerate digital transformation.
           </p>

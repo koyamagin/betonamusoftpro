@@ -39,7 +39,7 @@ export default function Process() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <h2 className="text-sm font-bold text-cyan-400 uppercase tracking-[0.2em] mb-4">How We Work</h2>
-          <h3 className="text-4xl md:text-5xl font-display font-bold">Standard Engineering Lifecycle</h3>
+          <h2 className="text-4xl md:text-5xl font-display font-bold">Quy Trình Phát Triển Chuẩn</h2>
         </div>
 
         <div className="relative">
